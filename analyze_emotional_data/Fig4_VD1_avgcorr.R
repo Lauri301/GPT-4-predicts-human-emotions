@@ -19,9 +19,9 @@ require(lattice)
 # Define all paths
 
 gpt_data_all_average_path <- 'path/data/VD1/ratings/data/gpt-4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv'
-human_data_batches_path <- 'path/data/VD1/ratings/data/human_data/average_ratings/combined_averages.csv'
-average_corr_table_save_path <- 'path/VD1/ratings/data/average_corr_tables'
-scatterplot_avgcorr_save_path <- 'path/VD1/ratings/analysis_gpt_4-1'
+human_data_batches_path <- 'path/data/VD1/ratings/data/human_data/data_csv'
+average_corr_table_save_path <- 'path/data/VD1/ratings/data/average_corr_tables'
+scatterplot_avgcorr_save_path <- 'path/data/VD1/ratings/analysis_gpt_4-1'
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Load preprocessed GPT data
