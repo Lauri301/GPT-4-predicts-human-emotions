@@ -15,7 +15,7 @@ import os
 round_number = 1 # Dataset number (e.g. dataset_1)
 
 # Basic path
-basic_path = Path('path/ratings/data/gpt_4-1_data') # CHANGE
+basic_path = Path('path/data/VD1/ratings/data/gpt_4-1_data') # CHANGE
 
 #%% Combines json files and txt files into one file. 
 # This will create as amny combined files as you have extra rounds (e.g. combined_output_1_0.csv, combined_output_1-1.csv).
