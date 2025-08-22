@@ -10,9 +10,9 @@ library(ape)
 # Load emotion rating data
 
 # Load GPT-4 rating data
-output_average_10 <- read.csv('path/tettamanti_project/raitings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+output_average_10 <- read.csv('path/data/VD2/ratings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
 # Load human average ratings
-combined_averages <- read.csv('path/tettamanti_project/raitings/data/human_data/average_ratings/combined_averages_without_t4.csv')
+combined_averages <- read.csv('path/data/VD2/ratings/data/human_data/average_ratings/combined_averages_gpt-4-1.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Compute correlation matrices for each dataset
@@ -71,14 +71,14 @@ GPT_ordered = GPT[colnames(H_ordered), colnames(H_ordered)]
 # Plot correlation matrices
 
 # Save GPT correlation matrix as PDF
-pdf("path/TET_gpt_structural_correlation_matrix.pdf", width = 15, height = 15)
+pdf("path/VD2_gpt_structural_correlation_matrix.pdf", width = 15, height = 15)
 
 # Plot GPT matrix (lower triangle only)
 corrplot(GPT_ordered, method = 'color', tl.col = 'black', type = 'lower', col = colorRampPalette(c("#2166AC", "#4393C3", "#92C5DE", "#D1E5F0", "#FDDBC7", "#F4A582", "#D6604D", "#B2182B"))(20))
 dev.off()
 
 # Save human correlation matrix as PDF
-pdf("path/TET_human_structural_correlation_matrix.pdf", width = 15, height = 15)
+pdf("path/VD2_human_structural_correlation_matrix.pdf", width = 15, height = 15)
 
 # Plot human matrix (upper triangle only)
 corrplot(H_ordered, method = 'color', tl.col = 'black', type = 'upper', col = colorRampPalette(c("#2166AC", "#4393C3", "#92C5DE", "#D1E5F0", "#FDDBC7", "#F4A582", "#D6604D", "#B2182B"))(20))
