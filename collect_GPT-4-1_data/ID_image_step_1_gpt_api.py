@@ -17,8 +17,8 @@ first_round = 1
 last_round = 10
 
 # Folders
-folder_path = 'path/stimulus/final_stimulus_set' # CHANGE
-output_folder_base = 'path/ratings/data/gpt_4-1_data/dataset' #CHANGE
+folder_path = 'path/data/ID/stimulus' # CHANGE
+output_folder_base = 'path/data/ID/ratings/data/gpt_4-1_data/dataset' #CHANGE
 
 #%% Extra round
 
