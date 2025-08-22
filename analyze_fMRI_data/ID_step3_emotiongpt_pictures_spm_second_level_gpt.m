@@ -6,9 +6,9 @@
 clear; clc;
 
 % Define the directories
-base_indir = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/first_level_gpt';
-base_output = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/second_level_gpt';
-mask = 'path/fmri_analysis/localizer/megafmri_localizer_gm_mask_2mm.nii';
+base_indir = 'path/fmri_analysis/ID_fmri_gpt-4-1/first_level_gpt';
+base_output = 'path/fmri_analysis/ID_fmri_gpt-4-1/second_level_gpt';
+mask = 'path/fmri_analysis/localizer/megafmri_localizer_gm_mask_3mm.nii';
 
 %% SCRIPT
 
