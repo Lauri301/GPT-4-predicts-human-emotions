@@ -41,7 +41,7 @@ norm_emotions$human_value <- ((norm_emotions$human_value-1)/(9-1))*10
 # Plot normalized scatterplot and save as PDF
 
 # Scatterplot on all emotions
-pdf('path/MEG_human_vs_gpt_norm_scatterplot.pdf', width = 10, height = 9)
+pdf('path/VD1_human_vs_gpt_norm_scatterplot.pdf', width = 10, height = 9)
 ggplot(norm_emotions, aes(x = human_value, y = gpt_value)) +
   # Use hex bins to show density of overlapping points
   geom_hex(bins = 25, aes(fill = ..count../sum(..count..), alpha = ..count..)) + 
