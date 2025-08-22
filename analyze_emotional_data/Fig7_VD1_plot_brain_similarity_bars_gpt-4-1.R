@@ -32,7 +32,7 @@ sorted_data$Emotion<- factor(sorted_data$Emotion, levels = sorted_data$Emotion)
 # Plot raw correlations between predicted and observed brain responses
 
 # Save the plot to a PDF file
-pdf("path/MEG_raw_beta_correlation.pdf",height = 6,width = 20)
+pdf("path/VD1_raw_beta_correlation.pdf",height = 6,width = 20)
 
 # Create bar plot for raw correlations
 ggplot(sorted_data, aes(x = Emotion, y = Correlation)) +
@@ -64,7 +64,7 @@ cor_and_threshold_long$Emotion <- factor(cor_and_threshold_long$Emotion, levels 
 custom_colors <- c("PPV_unc0001" = "#e31a1c", "PPV_FWE005" = "white")
 
 # Save the PPV plot to a PDF file
-pdf("path/MEG_thresholded_ppv.pdf",height = 6,width = 20)
+pdf("path/VD1_thresholded_ppv.pdf",height = 6,width = 20)
 
 # Create grouped bar plot for PPV values (two conditions per emotion)
 ggplot(cor_and_threshold_long, aes(x = Emotion, y = Value, fill = Type)) +
