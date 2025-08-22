@@ -13,7 +13,7 @@ import pandas as pd
 #%% Change parameters
 
 # Input folder containing the audio file
-folder_path = "path/stimulus_frames_new" # CHANGE
+folder_path = "path/data/VD1/stimulus_frames" # CHANGE
 
 #%% Converting an audio file to a text file
 
