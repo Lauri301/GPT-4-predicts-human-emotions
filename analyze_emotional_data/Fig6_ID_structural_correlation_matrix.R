@@ -12,7 +12,7 @@ library(ape)
 # Load GPT-4 rating data
 gpt_file <- read.csv('path/data/ID/ratings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
 # Load human average ratings
-human_file <- read.csv('path/data/ID/ratings/data/human_data/NAPS_human_average_ratings_gpt-4-1.csv')
+human_file <- read.csv('path/data/ID/ratings/data/human_data/human_average_ratings_gpt-4-1.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Prepare and align data
