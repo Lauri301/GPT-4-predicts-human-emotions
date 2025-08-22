@@ -112,7 +112,7 @@ dist_summary <- left_join(dist_long, summary_stats, by = "emotion")
 dist_summary$emotion <- factor(dist_summary$emotion, levels = summary_stats$emotion[order(summary_stats$median)])
 
 # Drawing boxplot
-pdf('path/MEG_boxplot_confidence_interval_and_median.pdf', width = 15, height = 6)
+pdf('path/VD1_boxplot_confidence_interval_and_median.pdf', width = 15, height = 6)
 ggplot(dist_summary, aes(x = emotion, y = distance, fill = emotion)) +
   # Jitter points
   geom_jitter(aes(color = emotion), width = 0.2, size = 2, alpha = 0.3, show.legend = FALSE) + 
