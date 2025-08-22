@@ -13,8 +13,8 @@ clear; clc;
 %% INPUT
 
 % Directories
-basedir = 'path/fmri_analysis/megaperception_fmri_gpt-4-1'; % CHANGE
-brainmask = 'path/fmri_analysis/megafmri_localizer_gm_mask.nii';
+basedir = 'path/fmri_analysis/VD1_fmri_gpt-4-1'; % CHANGE
+brainmask = 'path/fmri_analysis/megafmri_localizer_gm_mask_3mm.nii';
 
 human_dir = fullfile(basedir, '/second_level_human');
 gpt_dir = fullfile(basedir, '/second_level_gpt');
