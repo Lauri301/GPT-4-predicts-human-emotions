@@ -10,9 +10,9 @@ library(ape)
 # Load emotion rating data
 
 # Load GPT-4 rating data
-output_average_10 <- read.csv('path/megaperception_project/raitings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+output_average_10 <- read.csv('path/data/VD1/ratings/data/gpt-4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
 # Load human average ratings
-combined_averages <- read.csv('path/megaperception_project/raitings/data/human_data/average_ratings/combined_averages_without_sex.csv')
+combined_averages <- read.csv('path/data/VD1/ratings/data/human_data/average_ratings/combined_averages.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Compute correlation matrices for each dataset
