@@ -10,7 +10,7 @@ library(dplyr)
 # Load human rating data
 
 # Load combined average human ratings for all videos
-human_data <- read.csv('path/tettamanti_project/raitings/data/human_data/average_ratings/combined_averages_without_t4.csv')
+human_data <- read.csv('path/data/VD2/ratings/data/human_data/average_ratings/combined_averages_gpt-4-1.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Clean up column names for consistency
@@ -30,7 +30,7 @@ human_data_long <- human_data %>%
 # Load and analyze multiple GPT rating files
 
 # Read all gpt csv files
-gpt_files <- list.files('path/tettamanti_project/raitings/data/gpt_4-1_data/average/all_averages', pattern = "output_average_\\d+_files.*\\.csv", full.names = TRUE)
+gpt_files <- list.files('path/data/VD2/ratings/data/gpt_4-1_data/average/all_averages', pattern = "output_average_\\d+_files.*\\.csv", full.names = TRUE)
 
 # Initialize a table to store average correlations for each comparison
 average_correlations <- data.frame(Comparison = integer(0), AverageCorrelation = numeric(0))
@@ -129,7 +129,7 @@ average_correlations$Comparison <- original_order
 # Plot the results
 
 # Save figure showing how GPT-human correlation improves with more GPT samples
-pdf('path/TET_GPT-4V_raiting_correlation_with_humans.pdf', width = 10, height = 10)
+pdf('path/VD2_GPT-4_raiting_correlation_with_humans.pdf', width = 10, height = 10)
 ggplot(average_correlations, aes(x = Comparison, y = AverageCorrelation, color = Class)) +
   geom_point(size = 3) +
   scale_color_gradientn(colors = c("#2166AC", "#00BA38", "yellow", "#B2182B")) +
