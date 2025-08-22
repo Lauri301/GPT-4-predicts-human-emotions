@@ -72,14 +72,14 @@ GPT_ordered_1 = GPT[colnames(H_ordered_1), colnames(H_ordered_1)]
 # Plot correlation matrices
 
 # Save GPT correlation matrix as PDF
-pdf("path/MEG_gpt_structural_correlation_matrix.pdf", width = 15, height = 15)
+pdf("path/VD1_gpt_structural_correlation_matrix.pdf", width = 15, height = 15)
 
 # Plot GPT matrix (lower triangle only)
 corrplot(GPT_ordered_1, method = 'color', tl.col = 'black', type = 'lower', col = colorRampPalette(c("#2166AC", "#4393C3", "#92C5DE", "#D1E5F0", "#FDDBC7", "#F4A582", "#D6604D", "#B2182B"))(20))
 dev.off()
 
 # Save human correlation matrix as PDF
-pdf("path/MEG_human_structural_correlation_matrix.pdf", width = 15, height = 15)
+pdf("path/VD1_human_structural_correlation_matrix.pdf", width = 15, height = 15)
 
 # Plot human matrix (upper triangle only)
 corrplot(H_ordered_1, method = 'color', tl.col = 'black', type = 'upper', col = colorRampPalette(c("#2166AC", "#4393C3", "#92C5DE", "#D1E5F0", "#FDDBC7", "#F4A582", "#D6604D", "#B2182B"))(20))
