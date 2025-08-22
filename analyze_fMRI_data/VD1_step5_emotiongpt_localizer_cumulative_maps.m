@@ -5,7 +5,7 @@
 %% SCRIPT
 
 % Calculate the cumulative maps from p < 0.001, uncorrected results
-basedir = 'path/fmri_analysis/Megaperception_fmri_gpt_4-1';
+basedir = 'path/fmri_analysis/VD1_fmri_gpt-4-1';
 files_gpt = find_files(sprintf('%s/second_level_gpt',basedir),'spmT_0001_unc0001');
 files_human = find_files(sprintf('%s/second_level_human',basedir),'spmT_0001_unc0001');
 
