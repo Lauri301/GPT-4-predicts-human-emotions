@@ -7,10 +7,10 @@ clear; clc;
 %% INPUT
 
 vids_path = 'path/fmri_analysis/localizer/video_clips_presentation_order';
-datapath_gpt = 'path/fmri_analysis/Megaperception_fmri_gpt_4-1/materials/gpt_4-1_all_average_ratings.csv';
-datapath_human = 'path/fmri_analysis/Megaperception_fmri_gpt_4-1/materials/human_all_emotions_ratings_without_sex.csv';
+datapath_gpt = 'path/fmri_analysis/VD1_fmri_gpt_4-1/materials/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv';
+datapath_human = 'path/fmri_analysis/VD1_fmri_gpt_4-1/materials/combined_averages.csv';
 datapath_log = 'path/presentation_log_files';
-output = 'path/fmri_analysis/Megaperception_fmri/regressors';
+output = 'path/fmri_analysis/VD1_fmri_4-1/regressors';
 volumes_path = 'path/fmri_analysis/localizer/megafmri-localizer-num_dyns.mat';
 tr = 2.6; % time of repetition (the length of one volume in seconds)
 
