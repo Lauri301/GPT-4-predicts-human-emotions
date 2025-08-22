@@ -4,10 +4,10 @@
 
 %% INPUT
 
-datapath_gpt = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/materials/NAPS_gpt_10_average_without_sex_pic.csv';
-datapath_human = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/materials/NAPS_human_average_ratings_gpt-4-1_without_sex_pic.csv';
+datapath_gpt = 'path/fmri_analysis/ID_fmri_gpt-4-1/materials/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv';
+datapath_human = 'path/fmri_analysis/ID_fmri_gpt-4-1/materials/human_average_ratings_gpt-4-1.csv';
 datapath_log = 'path/presentation_log_files';
-output = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/regressors';
+output = 'path/fmri_analysis/ID_fmri_gpt-4-1/regressors';
 tr = 2.6; % time of repetition (the length of one volume in seconds)
 num_vols = 511;
 
