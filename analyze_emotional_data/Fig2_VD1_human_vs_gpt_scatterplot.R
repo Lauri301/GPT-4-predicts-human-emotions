@@ -9,8 +9,8 @@ library(ggplot2)
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Load GPT and human CSV files
 
-gpt_file <- read.csv('path/megaperception_project/raitings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
-human_file <- read.csv('path/megaperception_project/raitings/data/human_data/average_ratings/combined_averages_without_sex.csv')
+gpt_file <- read.csv('path/data/VD1/ratings/data/gpt-4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+human_file <- read.csv('path/data/VD1/ratings/data/human_data/average_ratings/combined_averages.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Rename columns and reshape data to long format
