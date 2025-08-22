@@ -10,8 +10,8 @@ import os
 
 #%% Change parameters
 
-video_folder = 'path/stimulus' # CHANGE
-output_folder = 'path/stimulus_frames' #CHANGE
+video_folder = 'path/data/VD1/stimulus' # CHANGE
+output_folder = 'path/data/VD1/stimulus_frames' #CHANGE
 
 #%% Script
 
