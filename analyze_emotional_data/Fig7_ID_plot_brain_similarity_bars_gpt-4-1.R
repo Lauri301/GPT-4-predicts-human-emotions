@@ -12,7 +12,7 @@ library(dplyr)
 # Load data
 
 # Read the correlation and thresholding results from CSV file
-cor_and_threshold_results <- read.csv("path/NAPS_project/fmri_cumulative_maps/gpt-4-1/NAPS_gpt-4-1_similarity_table.csv")
+cor_and_threshold_results <- read.csv("path/ID/fmri_analysis/ID_gpt-4-1_similarity_table.csv")
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Preprocess data
