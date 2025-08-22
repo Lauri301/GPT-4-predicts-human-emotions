@@ -16,8 +16,8 @@ from itertools import combinations
 number_of_files = 10
 
 # Input and output directory
-input_dir = 'path/ratings/data/gpt_4-1_data/average/input' #CHANGE
-output_dir = 'path/ratings/data/gpt_4-1_data/average/all_averages' #CHANGE
+input_dir = 'path/data/ID/ratings/data/gpt_4-1_data/average/input' #CHANGE
+output_dir = 'path/data/ID/ratings/data/gpt_4-1_data/average/all_averages' #CHANGE
 
 #%% Script
 
