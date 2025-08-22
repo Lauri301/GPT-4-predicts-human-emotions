@@ -4,9 +4,9 @@
 % Severi Santavirta & Wuhang Wu 10.3.2025, Lauri Suominen 21.8.2025
 
 % Define the directories
-base_indir = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/first_level_human';
-base_output = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/second_level_human';
-mask = 'path/fmri_analysis/localizer/megafmri_localizer_gm_mask_2mm.nii';
+base_indir = 'path/fmri_analysis/ID_fmri_gpt-4-1/first_level_human';
+base_output = 'path/fmri_analysis/ID_fmri_gpt-4-1/second_level_human';
+mask = 'path/fmri_analysis/localizer/megafmri_localizer_gm_mask_3mm.nii';
 
 %% SCRIPT
 
