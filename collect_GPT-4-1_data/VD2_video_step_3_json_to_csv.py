@@ -23,11 +23,11 @@ round_number = 1 # Dataset number (e.g. dataset_1)
 extra_round = 0 # This value is default
 
 # Basic path
-basic_path = Path('path/ratings/data/gpt_4-1_data') # CHANGE
+basic_path = Path('path/data/VD2/ratings/data/gpt_4-1_data') # CHANGE
 
 # Image source folder and next round target folder
-source_folder = 'path/stimulus_frames' # CHANGE
-target_folder = f'path/stimulus_frames_round_{round_number}_{extra_round}' # CHANGE
+source_folder = 'path/data/VD2/stimulus_frames' # CHANGE
+target_folder = f'path/data/Vd2/stimulus_frames/stimulus_frames_round_{round_number}_{extra_round}' # CHANGE
 
 #%% Convert json file to csv file
 
