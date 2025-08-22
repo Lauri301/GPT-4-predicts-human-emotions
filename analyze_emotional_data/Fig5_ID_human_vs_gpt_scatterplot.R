@@ -9,8 +9,8 @@ library(ggplot2)
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Load GPT and human CSV files
 
-gpt_file <- read.csv('path/NAPS_project/raitings/data/gpt_4-1_data/average/all_averages_without_sex_pic/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
-human_file <- read.csv('path/NAPS_project/raitings/data/human_data/NAPS_human_average_ratings_gpt-4-1_without_sex_pic.csv')
+gpt_file <- read.csv('path/data/ID/ratings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+human_file <- read.csv('path/data/ID/ratings/data/human_data/NAPS_human_average_ratings_gpt-4-1.csv')
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Separate emotion ratings into two categories: basic emotions and arousal/valence
@@ -71,7 +71,7 @@ combined <- rbind(norm_basic_emotions, norm_aro_val)
 # Create scatterplot comparing normalized GPT and human ratings
 
 # Save plot to PDF
-pdf("path/gpt-4-1/NAPS_human_vs_gpt_norm_scatterplot.pdf", width = 9, height = 9)
+pdf("path/ID_human_vs_gpt_norm_scatterplot.pdf", width = 9, height = 9)
 ggplot(combined, aes(x = human_values, y = gpt_values)) +
   # Use hex bins to show density of overlapping points
   geom_hex(bins = 25, aes(fill = after_stat(density), alpha = after_stat(density)), show.legend = FALSE) +
