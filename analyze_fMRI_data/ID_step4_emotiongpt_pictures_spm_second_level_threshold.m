@@ -5,7 +5,7 @@
 %% Threshold GPT-4V based results
 
 % Define base paths
-base_output = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/second_level_gpt';
+base_output = 'path/fmri_analysis/ID_fmri_gpt-4-1/second_level_gpt';
 feature_dirs = dir(base_output);
 feature_dirs = feature_dirs([feature_dirs.isdir]); % Keep only directories
 feature_dirs = feature_dirs(~ismember({feature_dirs.name}, {'.', '..'}));
@@ -53,7 +53,7 @@ end
 
 %% Threshold human based results
 
-base_output = 'path/fmri_analysis/NAPS_fmri_gpt-4-1/second_level_human';
+base_output = 'path/fmri_analysis/ID_fmri_gpt-4-1/second_level_human';
 feature_dirs = dir(base_output);
 feature_dirs = feature_dirs([feature_dirs.isdir]); % Keep only directories
 feature_dirs = feature_dirs(~ismember({feature_dirs.name}, {'.', '..'})); % Exclude . and ..
@@ -98,4 +98,5 @@ for i = 1:length(feature_dirs)
     else
         fprintf('SPM.mat file not found for feature: %s\n', feature);
     end
+
 end
