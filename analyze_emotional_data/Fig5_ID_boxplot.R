@@ -12,8 +12,8 @@ library(tidyverse)
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Load GPT and human CSV files
 
-gpt <- read.csv('path/NAPS_project/raitings/data/gpt_4-1_data/average/all_averages_without_sex_pic/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
-human <- read.csv('path/NAPS_project/raitings/data/human_data/NAPS_human_average_ratings_gpt-4-1_without_sex_pic.csv')
+gpt <- read.csv('path/data/ID/ratings/data/gpt_4-1_data/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+human <- read.csv('path/data/ID/ratings/data/human_data/NAPS_human_average_ratings_gpt-4-1.csv)
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Prepare and align data
