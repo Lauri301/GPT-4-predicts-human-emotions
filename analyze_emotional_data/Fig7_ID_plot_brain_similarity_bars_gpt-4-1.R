@@ -51,7 +51,7 @@ dev.off()
 
 # Select relevant columns for PPV values
 selected_data <- cor_and_threshold_results %>%
-  select(Emotion, PPV_unc0001, PPV_FWE005)
+  select(Emotion, PPV_unc0001)
 
 # Reshape data from wide to long format for plotting with ggplot
 cor_and_threshold_long <- melt(selected_data, id.vars = "Emotion", 
@@ -61,7 +61,7 @@ cor_and_threshold_long <- melt(selected_data, id.vars = "Emotion",
 cor_and_threshold_long$Emotion <- factor(cor_and_threshold_long$Emotion, levels = sorted_data$Emotion)
 
 # Define custom colors for the two PPV types
-custom_colors <- c("PPV_unc0001" = "#e31a1c", "PPV_FWE005" = "white")
+custom_colors <- c("PPV_unc0001" = "#e31a1c")
 
 # Save the PPV plot to a PDF file
 pdf("path/ID_thresholded_ppv.pdf",height = 5,width = 5)
