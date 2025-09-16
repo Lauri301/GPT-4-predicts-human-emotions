@@ -2,7 +2,7 @@
 
 % Severi Santavirta & Yuhang Wu 15.5.2024, Lauri Suominen 21.8.2025
 
-%% Threshold GPT-4V based results
+%% Threshold GPT-4 based results
 
 % Define base paths
 base_output = 'path/fmri_analysis/ID_fmri_gpt-4-1/second_level_gpt';
@@ -98,5 +98,4 @@ for i = 1:length(feature_dirs)
     else
         fprintf('SPM.mat file not found for feature: %s\n', feature);
     end
-
 end
