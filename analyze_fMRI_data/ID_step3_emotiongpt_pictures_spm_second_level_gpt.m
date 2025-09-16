@@ -35,7 +35,7 @@ for j = 1:length(created_folders)
     end
     
     % Define the second level analysis parameters
-    contrast_image = 'beta_0001.nii';
+    contrast_image = 'con_0001.nii';
     
     % Perform second level analysis
     out = define_second_level_main_effects_model(contrast_image, subjects, mask, feature_indir,feature_output);
