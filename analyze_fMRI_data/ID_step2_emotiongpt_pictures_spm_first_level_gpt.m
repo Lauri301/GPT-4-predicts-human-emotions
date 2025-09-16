@@ -118,6 +118,7 @@ spm_jobman('initcfg');
 spm_jobman('run', matlabbatch);
 
 end
+
 function estimate_first_level_model(outdir)
 
 spm_file = sprintf('%s/SPM.mat',outdir);
@@ -142,18 +143,6 @@ matlabbatch{1}.spm.stats.con.delete = 1;
 
 spm_jobman('initcfg');
 spm_jobman('run', matlabbatch);
-
-end
-
-function estimate_first_level_model(outdir)
-
-spm_file = sprintf('%s/SPM.mat',outdir);
-matlabbatch{1}.spm.stats.fmri_est.spmmat = {spm_file};
-matlabbatch{1}.spm.stats.fmri_est.write_residuals = 0;
-matlabbatch{1}.spm.stats.fmri_est.method.Classical = 1;
-
-spm_jobman('initcfg');
-spm_jobman('run',matlabbatch)
 
 end
 
