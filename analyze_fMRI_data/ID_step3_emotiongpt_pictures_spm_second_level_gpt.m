@@ -58,7 +58,7 @@ function out = define_second_level_main_effects_model(contrast_image,subjects,br
         matlabbatch{1}.spm.stats.factorial_design.cov = struct('c', {}, 'cname', {}, 'iCFI', {}, 'iCC', {}); % No covariates
         matlabbatch{1}.spm.stats.factorial_design.multi_cov = struct('files', {}, 'iCFI', {}, 'iCC', {}); % No covariates
         matlabbatch{1}.spm.stats.factorial_design.masking.tm.tm_none = 1; % No threshold masking
-        matlabbatch{1}.spm.stats.factorial_design.masking.im = 0; % No implicit masking
+        matlabbatch{1}.spm.stats.factorial_design.masking.im = -Inf; % No implicit masking
         matlabbatch{1}.spm.stats.factorial_design.masking.em = {brainmask}; % Use external brain maks
         matlabbatch{1}.spm.stats.factorial_design.globalc.g_omit = 1; % No global calculation
         matlabbatch{1}.spm.stats.factorial_design.globalm.gmsca.gmsca_no = 1; % No grand mean scaling
@@ -71,6 +71,7 @@ function out = define_second_level_main_effects_model(contrast_image,subjects,br
         out = 0;
     end
 end
+
 function out = define_contrasts_main_effect_models(outdir,contrast)
     try
         spm_file = sprintf('%s/SPM.mat',outdir);
@@ -89,6 +90,7 @@ function out = define_contrasts_main_effect_models(outdir,contrast)
         out = 0;
     end
 end
+
 function out = estimate_second_level_model(outdir)
     try
         spm_file = sprintf('%s/SPM.mat',outdir);
