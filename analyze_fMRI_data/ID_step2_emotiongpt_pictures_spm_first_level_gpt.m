@@ -42,6 +42,7 @@ for j = 1:length(features_gpt)-1
         
         % Extract the relevant column from 'R'
         R = Rgpt(:,[j,end]);
+        R = zscore(R);
         names = {feature;features_gpt{end}}'; % Use the feature name as the name
         
         save(sprintf('%s/%s_model.mat',tmp_folder,sub),'R','names');
@@ -72,11 +73,12 @@ for j = 1:length(features_gpt)-1
             scans = cellstr(spm_select('ExtFPList',preproc_dir,sprintf('%s_task-pictures_space-MNI152NLin2009cAsym_desc-smoothAROMAnonaggr_bold',sub),1:511));
             define_first_level_model(outdir,scans,model_file,brainmask);
             estimate_first_level_model(outdir);
+            spm_contrast(outdir);
         end
     end
 
     %% Gzip first level results
-    betas = find_files(first_level_dir,'*beta_0002');
+    betas = find_files(first_level_dir,'*beta_0003');
     masks = find_files(first_level_dir,'*mask');
     res = find_files(first_level_dir,'*ResMS');
     rpv = find_files(first_level_dir,'*RPV');
@@ -88,6 +90,8 @@ for j = 1:length(features_gpt)-1
     cellfun(@delete,rpv)
     cellfun(@delete,spmf);
 end
+
+%% Functions
 
 function define_first_level_model(outdir,scans,model_file,brainmask)
 
@@ -125,6 +129,34 @@ spm_jobman('initcfg');
 spm_jobman('run',matlabbatch)
 
 end
+
+function spm_contrast(outdir)
+
+spm_file = sprintf('%s/SPM.mat',outdir);
+matlabbatch{1}.spm.stats.con.spmmat = {spm_file};
+matlabbatch{1}.spm.stats.con.consess{1}.tcon.name = 'Feature-ImageOff';
+matlabbatch{1}.spm.stats.con.consess{1}.tcon.weights = [1 -1 0];
+matlabbatch{1}.spm.stats.con.consess{1}.tcon.sessrep = 'none';
+
+matlabbatch{1}.spm.stats.con.delete = 1;
+
+spm_jobman('initcfg');
+spm_jobman('run', matlabbatch);
+
+end
+
+function estimate_first_level_model(outdir)
+
+spm_file = sprintf('%s/SPM.mat',outdir);
+matlabbatch{1}.spm.stats.fmri_est.spmmat = {spm_file};
+matlabbatch{1}.spm.stats.fmri_est.write_residuals = 0;
+matlabbatch{1}.spm.stats.fmri_est.method.Classical = 1;
+
+spm_jobman('initcfg');
+spm_jobman('run',matlabbatch)
+
+end
+
 function files = find_files(directory,filter)
 
 if(nargin < 2)
