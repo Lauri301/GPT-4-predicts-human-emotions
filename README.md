@@ -1,4 +1,4 @@
-The repository contains data and analysis script used in the research article "GPT-4 accurately predicts human emotions at phenomenological and neural levels", preprint: <l>coming soon<l>
+The repository contains data and analysis script used in the research article "GPT-4 accurately predicts human emotions at phenomenological and neural levels", preprint: https://doi.org/10.1101/2025.09.18.677029
 
 Code by Lauri Suominen, Severi Santavirta & Yuhang Wu
 
