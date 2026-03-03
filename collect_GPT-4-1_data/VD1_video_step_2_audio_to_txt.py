@@ -19,7 +19,7 @@ folder_path = "path/data/VD1/stimulus_frames" # CHANGE
 
 # Configure the OpenAI client to use the Whisper model
 client = OpenAI(
-        api_key= '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')
+        api_key= 'YOUR API KEY HERE')
 
 # Transcribe a single audio file using OpenAI's Whisper model and return a text output
 def transcribe_audio(file_path):
