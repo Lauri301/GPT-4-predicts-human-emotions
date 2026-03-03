@@ -8,9 +8,9 @@ library(ggplot2)
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Define file paths and save path
-gpt_original_prompt_file <- read.csv('path/data/ID/ratings/data/gpt-4-1/original_prompt/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
-gpt_prompt2_file <- read.csv('path/data/ID/ratings/data/gpt-4-1/alternative_prompt_1/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
-gpt_prompt3_file <- read.csv('path/data/ID/ratings/data/gpt-4-1/alternative_prompt_2/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+gpt_original_prompt_file <- read.csv('path/data/ID/ratings/data/gpt-4-1_data/original_prompt/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+gpt_prompt2_file <- read.csv('path/data/ID/ratings/data/gpt-4-1_data/alternative_prompt_1/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
+gpt_prompt3_file <- read.csv('path/data/ID/ratings/data/gpt-4-1_data/alternative_prompt_2/average/all_averages/output_average_10_files_1_2_3_4_5_6_7_8_9_10.csv')
 csv_save_path <- 'path/analysis'
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
