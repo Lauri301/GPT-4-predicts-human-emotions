@@ -72,7 +72,7 @@ def process_images_and_save(folder_path, round_number, output_folder='./output_d
             conn = http.client.HTTPSConnection("api.openai.com")
             headers = {
                 # set the key here
-                'Authorization': 'Bearer our API key',
+                'Authorization': 'Bearer YOUR API KEY HERE',
                 'Content-Type': 'application/json'
             }
             payload = json.dumps({
